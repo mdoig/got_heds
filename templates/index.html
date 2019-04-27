@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GOT heds?</title>
+    <title>GOT Heds?</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,6 +13,8 @@
         <div class="jumbotron text-center", style='background-image: url(http://vignette3.wikia.nocookie.net/gameofthrones/images/4/46/TSITD_The_Wall.png/revision/latest?cb=20150325184700); background-size: cover; background-position-y: center'>
           <h2>The AV Club's latest <i>Game of Thrones</i> stories</h2>
         </div>
+        <!-- Loop through the info in the links list and 
+            put href and headline text in the appropriate spots -->
         {% for link in links.links %}
         <div class='row text-center'>
             <div class="col-md">
