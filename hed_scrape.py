@@ -14,7 +14,7 @@ def scrape_heds():
     soup = BeautifulSoup(html, 'html.parser')
 
     # Get all info from the specified .find_all() location
-    info = soup.find_all('div', class_='item__content item__content--thumb')
+    info = soup.find_all('div', class_='sqekv3-4 lkUfND')
 
     # Create empty list for the info to be pulled
     links = []
@@ -22,8 +22,8 @@ def scrape_heds():
     # Get headline text and hrefs using a for loop and 
     # append as dictionaries to the empty links list
     for x in range(len(info)):
-        hed = info[x].h1.div.text
-        href = info[x].h1.a['href']
+        hed = info[x].h1.text
+        href = info[x].a['href']
         links_dict = {'hed' : hed, 'href' : href}
         links.append(links_dict)
     
