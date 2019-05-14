@@ -14,7 +14,7 @@ def scrape_heds():
     soup = BeautifulSoup(html, 'html.parser')
 
     # Get all info from the specified .find_all() location
-    info = soup.find_all('div', class_='sqekv3-4 lkUfND')
+    info = soup.find_all('div', class_='sqekv3-5 hVuiJw')
 
     # Create empty list for the info to be pulled
     links = []
