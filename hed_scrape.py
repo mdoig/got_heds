@@ -22,7 +22,7 @@ def scrape_heds():
     # Get headline text and hrefs using a for loop and 
     # append as dictionaries to the empty links list
     for x in range(len(info)):
-        hed = info[x].h1.text
+        hed = info[x].h2.text
         href = info[x].a['href']
         links_dict = {'hed' : hed, 'href' : href}
         links.append(links_dict)
